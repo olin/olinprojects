@@ -51,7 +51,7 @@ app.configure('development', function () {
 });
 
 app.configure('production', function () {
-  app.set('host', 'olinprojects.com');
+  app.set('host', 'www.olinprojects.com');
 });
 
 /**
