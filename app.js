@@ -74,7 +74,7 @@ app.get('/authenticate', olinapps.loginRequired, function (req, res) {
  */
 
 function isAuthorized (project, req) {
-  return project && req.user && (project.submitter == req.user.username || req.user.username == 'timothy.ryan' || (project.creators || []).indexOf(req.user.username) >= -1);
+  return project && req.user && (project.submitter == req.user.username || req.user.username == 'timothy.ryan' || (project.creators || []).indexOf(req.user.username) > -1);
 }
 
 function getImageUrl (url, width, height) {
